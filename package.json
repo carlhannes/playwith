@@ -1,0 +1,49 @@
+{
+  "name": "playwith",
+  "version": "0.0.1",
+  "description": "Do you want something to playwith?",
+  "main": "server/index.js",
+  "files": [
+    "/dist",
+    "/server"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "build:debug": "webpack --debug --devtool source-map --output-pathinfo",
+    "build:watch": "npm run build:debug -- --watch",
+    "lint": "eslint . --quiet",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlhannes/playwith.git"
+  },
+  "author": "https://github.com/carlhannes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlhannes/playwith/issues"
+  },
+  "homepage": "https://github.com/carlhannes/playwith#readme",
+  "devDependencies": {
+    "ace-builds": "^1.2.9",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.2.0",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "express": "^4.16.2",
+    "extend": "^3.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "litequery": "^0.2.0",
+    "run-script": "^0.1.1",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-livereload-plugin": "^1.0.0"
+  }
+}
